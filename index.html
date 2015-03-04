@@ -3,30 +3,84 @@
 <head>
   <title>Ko-Am Flooring</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="koam_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id="wrapper">
-    
-    <div id="title">
-    <h1>Ko-Am Flooring</h1>
-    </div>
-    
-    <div id="logo">
-    <img src="logo.jpg">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="logo.jpg"></a>
     </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hardwood <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">            
+            <li><a href="www.mullicanflooring.com">Mullican</a></li>
+            <li><a href="www.harriswoodfloors.com">Harris</a></li>
+            <li><a href="www.armstrong.com">Armstrong</a></li>
+            <li class="divider"></li>            
+            <li><a href="www.bruce.com/flooring/hardwood">Bruce</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Laminate/Tiles <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="estimate.html">Request an Estimate</a></li>
+        <li><a href="mailto:shawnmin79@gmail.com">Contact Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="row">
+
+  <div class="col-md-2">
     <table>
-    <tr>
-      <td><a href="index.html">Home</a></td>
-      <td><a href="index.html">Hardwood</a></td>
-      <td><a href="index.html">Laminate</a></td>
-      <td><a href="index.html">Tile</a></td>
-      <td><a href="estimate.html">Request an estimate</a></td>
-      <td><a href="mailto:shawnmin79@gmail.com">Contact</a></td>
-    </tr>
+      <tr><a class="btn btn-link btn-lg btn-block" href="index.html">Home</a></tr><br>
+      <tr><a class="btn btn-link btn-lg btn-block" href="hardwood.html">Hardwood</a></tr><br>
+      <tr><a class="btn btn-link btn-lg btn-block" href="laminate.html">Laminate/Tiles</a></tr><br>
+      <tr><a class="btn btn-link btn-lg btn-block" href="estimate.html">Estimate</a></tr><br>
+      <tr><a class="btn btn-link btn-lg btn-block" href="mailto:shawnmin79@gmail.com">Contact</a></tr><br>
     </table>
-
   </div>
+
+  <div class="col-md-10">
+  <h3>Welcome to Koam Flooring</h3>
+  <img src="floor.jpg">
+  <p>We are specialists in residential and commercial hardwood flooring installation and hardwood floor refinishing. </p>
+  <p>We have over twenty five years experience servicing the hardwood flooring needs of our clients in the Silicon Valley area. </p>
+  <p>Our commitment to service is unparalled in the hardwood flooring industry. We are fully licensed and insured. </p>
+  <p>Our goal is to develop long-term lasting relationship with our clients by providing outstanding service and superb workmanship.</p>
+  </div>
+  </div>
+  </div>
+
 </body>
 </html>
+
