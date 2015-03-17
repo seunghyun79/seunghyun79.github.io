@@ -3,78 +3,109 @@
 <head>
   <title>Ko-Am Flooring</title>
   <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" type="text/css" href="koam_style.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-  <div id="wrapper">
+  <div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logo.jpg"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown" >
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hardwood<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">            
+            <li><a href="hardwood.html">Hardwood</a></li>
+            <li class="divider"></li>
+            <li align=center><b>Link to Brands</b></li>
+            <li><a href="http://www.armstrong.com" target="_blank">Armstrong</a></li>
+            <li><a href="http://www.bruce.com/flooring/hardwood" target="_blank">Bruce</a></li>
+            <li><a href="http://www.harriswoodfloors.com" target="_blank">Harris</a></li>
+            <li><a href="http://www.mullicanflooring.com" target="_blank">Mullican</a></li>
+          </ul>
+        </li>        
+        <li><a href="#">Request an Estimate</a></li>
+        <li><a href="mailto:shawnmin79@gmail.com">Contact Us</a></li>
+      </ul>
       
-    <div id="title">
-    <h1>Request an estimate</h1>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><i class="fa fa-home"></i><a href="index.html">Home<span class="sr-only">(current)</span></a></li>        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </nav>
+  </div><!-- /.container-fluid -->
+
+  <div class="row">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-1">
+      <table>
+        <tr><a class="btn btn-link btn-lg btn-block" href="index.html">Home</a></tr><br>
+        <tr><a class="btn btn-link btn-lg btn-block" href="hardwood.html">Hardwood</a></tr><br>
+        <tr><a class="btn btn-link btn-lg btn-block" href="#">Estimate</a></tr><br>
+        <tr><a class="btn btn-link btn-lg btn-block" href="mailto:shawnmin79@gmail.com">Contact</a></tr><br>
+      </table>
     </div>
+
+    <div class="col-md-5">
+      <div id="wrapper">
+      
+        <div id="title">
+          <h1>Request an estimate</h1>
+        </div>
     
-    <div id="logo">
-    <img src="logo.jpg">
+        <div id="estimate">
+          <p>Please request an estimate on the form below and we'll reply back within 24 hours to setup an appointment with you. 
+          Thank you!</p>
+        </div>
+      </div>
+        <form class="form-inline" action="mailto:shawnmin79@gmail.com">
+          <div class="form-group">
+            <p><label for="InputName">Name</label>
+            <input type="text" class="form-control" id="InputName" placeholder="Last Name, First Name"></p>
+            <p><label for="InputEmail">Email</label>
+            <input type="email" class="form-control" id="InputEmail" placeholder="Email"></p>
+            <p><label for="InputSubject">Subject</label> <input name="subject" class="form-control" id="InputSubject" placeholder="Subject"></p>
+            <p><label for="InputBody">Body Text</label>
+            <textarea rows="5" cols="50" name="body" placeholder="Please briefly describe what work is needed and preferred date for an appointment."></textarea></p>
+            <p><button type="submit" class="btn btn-default">Request an estimate</button></p>
+          </div>  
+        </form>
+      
     </div>
 
-    <table>
-    <tr>
-      <td><a href="index.html">Home</a></td>
-      <td><a href="index.html">Hardwood</a></td>
-      <td><a href="index.html">Laminate</a></td>
-      <td><a href="index.html">Tile</a></td>
-      <td><a href="estimate.html">Request an estimate</a></td>
-      <td><a href="mailto:shawnmin79@gmail.com">Contact</a></td>
-    </tr>
-    </table>
-    <br>
-    
-    <div id="estimate">
-    
-    Please follow the steps to request an estimate:
-    <ol>
-    <li>Copy the table below.</li>
-    <li>Click "Contact" above, which will open the e-mail to be sent to us.</li>
-    <li>Paste to the body of the email.</li>
-    <li>Fill in the blanks and send.</li>
-    <li>We'll reply back within 24 hours to setup an estimate.</li>
-    </ol>
+    <div class="col-md-4">
+    <div id="image"><img src="floorbg.jpg"></div>
+    </div>
 
-    Thank you!<p>
-
-    <table>
-    <tr>
-      <td>Name</td>
-      <td>_________________________</td>
-    </tr>
-    <tr>
-      <td>Address</td>
-      <td>________________________________</td>
-    </tr>    
-    <tr>
-      <td></td>
-      <td>________________________________</td>
-    </tr>
-    <tr>
-      <td>Phone</td>
-      <td>(______) _______ - _________</td>
-    </tr>
-    <tr>
-      <td>Preferred date for estimate</td>
-      <td>____/____/_______</td>
-    </tr>
-    <tr>
-      <td>Work Scope</td>
-      <td>________________________________</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>________________________________</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>________________________________</td>
-    </tr>
-    </table>
+    <div class="col-md-1"></div>
+  </div>
+  
+  <div class="row">
+    <div id="footer">
+    Ko-Am Flooring<br>
+    License: #794899<br>
+    5191 Camden Avenue, San Jose, CA 95124<br>
+    Toll Free: 800-300-3218
     </div>
   </div>
 </body>

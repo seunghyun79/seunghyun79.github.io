@@ -2,35 +2,46 @@ body {
   font-family: 'helvetica neue', arial, sans-serif;
   font-weight: 300;
   font-size: 12;
-  background: url(wallp.jpg) repeat;
+  color: rgb(171, 80, 5);
+  background: url(floor.png) repeat;
 }
+
+.navbar-default {
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;  
+}
+
+.navbar-brand {
+  margin-top: -10px;    
+}
+
+.btn-link {
+  color: rgb(171, 80, 5);
+}
+
 #wrapper {
   width: 960px auto;
   margin: 15px auto;
   text-align: center;
 }
+
 #title {
-	float: left;
+	text-align: left;
+	color: rgb(171,	80, 5);
 }
 
 #estimate {
-	color: blue;
-	line-height: 30px ;
+	color: rgb(171,	80, 5);
+	
 	text-align: left;
 }
 
-#logo {
+#image {
 	float: right;
 }
 
-table {
-	clear: both;
-	border: solid 2px gray ;
-	height: 50px;
-
-}
-
-td {
-	padding: 5px 25px;
-	text-align: left;
+#footer {
+	text-align: center;
+	font-size:11px;
+	color: rgb(171,	80, 5);
 }
